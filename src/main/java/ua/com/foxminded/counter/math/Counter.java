@@ -26,7 +26,7 @@ public class Counter {
         return result;
     }
 
-    public List<Item> createStage(String input) {
+    private List<Item> createStage(String input) {
         List<Item> item = new ArrayList<>();
 
         String[] keyForUniqSymbols = input.split("");
@@ -37,7 +37,7 @@ public class Counter {
         return item;
     }
 
-    public List<String> createListSymbolsFromArgs(String input) {
+    private List<String> createListSymbolsFromArgs(String input) {
 
         return new ArrayList<>(Arrays.asList(input.split("")));
     }
