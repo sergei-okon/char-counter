@@ -1,3 +1,5 @@
+package ua.com.foxminded.counter;
+
 import ua.com.foxminded.counter.math.Counter;
 import ua.com.foxminded.counter.model.Result;
 import ua.com.foxminded.counter.text.Formatter;
