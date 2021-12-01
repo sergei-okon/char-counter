@@ -21,7 +21,7 @@ class CounterTest {
     }
 
     @Test
-    void format_ShouldMadeObjectResult_whenArgsIsCorrect() {
+    void format_shouldMadeObjectResult_whenArgsIsCorrect() {
         Map<String, Integer> countUniqueCharacters = Map.of(
                 " ", 1, "!", 1, "r", 1, "d", 1,
                 "e", 1, "w", 1, "h", 1, "l", 3, "o", 2);

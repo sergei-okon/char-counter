@@ -19,7 +19,7 @@ class FormatterTest {
     }
 
     @Test
-    void format_ShouldSuccess_whenArgsTwoWord() {
+    void format_shouldSuccess_whenArgsTwoWord() {
         Result result = counter.countUniqueSymbols("hello world!");
         StringBuilder output = formatter.format(result);
 
