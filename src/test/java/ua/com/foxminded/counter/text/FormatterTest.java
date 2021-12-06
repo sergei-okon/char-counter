@@ -23,18 +23,16 @@ class FormatterTest {
         Result result = counter.countUniqueSymbols("hello world!");
         StringBuilder output = formatter.format(result);
 
-        String expected = """
-                hello world!
-                "h" - 1
-                "e" - 1
-                "l" - 3
-                "o" - 2
-                " " - 1
-                "w" - 1
-                "r" - 1
-                "d" - 1
-                "!" - 1
-                """;
+        String expected = "hello world!\n" +
+                "\"h\"" + " - " + "1\n" +
+                "\"e\"" + " - " + "1\n" +
+                "\"l\"" + " - " + "3\n" +
+                "\"o\"" + " - " + "2\n" +
+                "\" \"" + " - " + "1\n" +
+                "\"w\"" + " - " + "1\n" +
+                "\"r\"" + " - " + "1\n" +
+                "\"d\"" + " - " + "1\n" +
+                "\"!\"" + " - " + "1\n";
 
         assertEquals(expected, output.toString());
     }
